@@ -1,0 +1,21 @@
+header {
+  border: 1px solid black;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+
+.navContainer > ul {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}
+

@@ -1,21 +1,45 @@
-header {
-  border: 1px solid black;
+/* Header */
+.logo {
+  width: 7.8em;
+  height: 2em;
 }
 
 .navContainer {
+  border: solid 1px black;
   display: flex;
   justify-content: space-around;
-  border: 1px solid black;
+  align-items: center;
+  height: 6em;
 }
 
 .navContainer > ul {
-  width: 30%;
+  width: 15%;
   display: flex;
   justify-content: space-between;
+  padding: 0;
+}
+.emptyBox {
+  width: 15%;
 }
 
 li {
-  text-decoration: none;
   list-style-type: none;
 }
 
+a {
+  color: black;
+  letter-spacing: -0.1em;
+  font-size: 0.95em;
+  text-decoration: none;
+}
+
+a:active {
+  font-weight: 600;
+}
+
+/* Banner */
+.bannerWrapper {
+  background-color: gray;
+  height: 30em;
+  width: 100%;
+}

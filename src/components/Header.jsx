@@ -6,7 +6,7 @@ const Header = () => {
                 <div className='logo'
                     style={{
                         backgroundImage: 'url(/logo.png)',
-                        backgroundSize: 'cover'
+                        backgroundSize: 'contain'
                     }}>
                 </div>
                 <ul>

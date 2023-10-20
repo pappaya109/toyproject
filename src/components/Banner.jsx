@@ -28,10 +28,11 @@ const Banner = () => {
                             <p>만드는 사람이 수고로우면<br></br>쓰는 사람이 편하다</p>
                             <p>서비스{'>'}</p>
                         </div>
-                <video 
-                loop 
-                muted 
-                auto
+                <video className='bannerVideo'
+                autoPlay ='autoplay'
+                loop = 'loop'
+                muted = 'muted'
+                preload='none'
                 poster='https://woowahan-cdn.woowahan.com/new_resources/image/banner/a744b994004242869f0ad158cbc00988.jpg'
                 >
                     <source src="https://woowahan-cdn.woowahan.com/new_resources/image/banner/e7cd396be2fb4c24838ea637b79c32dc.mp4" type="video/mp4" />
@@ -44,7 +45,6 @@ const Banner = () => {
                             <p>함께가치{'>'}</p>
                         </div>
                 </SwiperSlide>
-                
             </Swiper>
         </div>
     )

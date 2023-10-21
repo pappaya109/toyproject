@@ -1,0 +1,29 @@
+.newsWrapper {
+    margin: 7em 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.newsWrapper > h2 {
+    font-size: 3em;
+}
+
+.cardSection {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover {
+    background-color: rgb(203, 203, 203);
+}
+
+.cardSection > button {
+    border-radius: 0.8em;
+    font-size: 1.2em;
+    font-weight: 600;
+    border:none;
+    padding: 1em;
+    margin: auto;
+}

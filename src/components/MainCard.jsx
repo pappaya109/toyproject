@@ -2,7 +2,7 @@ import React from 'react'
 import 'swiper/css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, EffectFade } from 'swiper/modules';
-import styles from './MainCard.module.css'
+import styles from '../styles/MainCard.module.css'
 const MainCard = () => {
     return (
         <section className={styles.mainCardWrapper}>
@@ -16,8 +16,8 @@ const MainCard = () => {
                     spaceBetween={2}
                     loop={true}
                     autoplay={{
-                        delay: 500,
-                        disableOnInteraction: true,
+                        delay: 1000,
+                        disableOnInteraction: false,
                     }}
                     modules={[Autoplay, Pagination, EffectFade]}
                 >
@@ -25,43 +25,55 @@ const MainCard = () => {
                         <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ea260167a5f84a959c8344a6abfefd7b.jpg" alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src='https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg' />
+                        <img style={{marginTop: '2em'}} src='https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg' />
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ea260167a5f84a959c8344a6abfefd7b.jpg" alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ea260167a5f84a959c8344a6abfefd7b.jpg" />
+                        <img style={{marginTop: '2em'}} src='https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg' />
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ea260167a5f84a959c8344a6abfefd7b.jpg" alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg" />
+                        <img style={{marginTop: '2em'}} src='https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg' />
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ea260167a5f84a959c8344a6abfefd7b.jpg" alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ea260167a5f84a959c8344a6abfefd7b.jpg" />
+                        <img style={{marginTop: '2em'}} src='https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg' />
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ea260167a5f84a959c8344a6abfefd7b.jpg" alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg" />
+                        <img style={{marginTop: '2em'}} src='https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg' />
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ea260167a5f84a959c8344a6abfefd7b.jpg" alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ea260167a5f84a959c8344a6abfefd7b.jpg" />
+                        <img style={{marginTop: '2em'}} src='https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg' />
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ea260167a5f84a959c8344a6abfefd7b.jpg" alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg" />
+                        <img style={{marginTop: '2em'}} src='https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg' />
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ea260167a5f84a959c8344a6abfefd7b.jpg" alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ea260167a5f84a959c8344a6abfefd7b.jpg" />
+                        <img style={{marginTop: '2em'}} src='https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg' />
+                    </SwiperSlide>
+                    <SwiperSlide >
+                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ea260167a5f84a959c8344a6abfefd7b.jpg" alt="" />
                     </SwiperSlide>
                     <SwiperSlide>
-                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ea260167a5f84a959c8344a6abfefd7b.jpg" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ea260167a5f84a959c8344a6abfefd7b.jpg" />
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <img src="https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg" />
+                        <img style={{marginTop: '2em'}} src='https://woowahan-cdn.woowahan.com/new_resources/image/card/ba8db158f23b43d1a41a9ad9dedfd26f.jpg' />
                     </SwiperSlide>
                 </Swiper>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './MainService.module.css'
+import styles from '../styles/MainService.module.css'
 const MainService = () => {
     return (
         <section className={styles.mainServiceWrapper}>

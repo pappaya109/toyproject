@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     const [openBar, setOpenBar] = useState(false);
     const [openSubMenu, setOpenSubsMenu] = useState();
-    const[scroll,setScroll] = useState()
-    useEffect(()=>{setScroll(window.scrollY)},[scroll])
+    const [scroll, setScroll] = useState()
+    useEffect(() => { setScroll(window.scrollY) }, [scroll])
     console.log(scroll)
     const hoverNavBar = (e) => {
         setOpenSubsMenu(e.target.value)
@@ -14,22 +14,24 @@ const Header = () => {
     const leaveNavBar = () => {
         setOpenBar(false)
     }
-    
+
     return (
         <header>
             <nav className='navContainer'>
-                <div className='logo'
-                    style={{
-                        backgroundImage: 'url(/logo.png)',
-                        backgroundSize: 'contain',
-                        backgroundRepeat: 'no-repeat'
-                    }}>
-                </div>
+                <Link to='/'>
+                    <div className='logo'
+                        style={{
+                            backgroundImage: 'url(/logo.png)',
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat'
+                        }}>
+                    </div>
+                </Link>
                 <ul >
                     <Link to="#"><li value={1} onMouseOver={(e) => hoverNavBar(e)} >회사소개</li></Link>
                     <Link to="#"><li value={2} onMouseOver={(e) => hoverNavBar(e)}>서비스</li></Link>
                     <Link to="#"><li value={3} onMouseOver={(e) => hoverNavBar(e)}>함께가치</li></Link>
-                    <Link to="#"><li value={4} onMouseOver={(e) => hoverNavBar(e)}>뉴스룸</li></Link>
+                    <Link to="/newslist"><li value={4} onMouseOver={(e) => hoverNavBar(e)}>뉴스룸</li></Link>
                 </ul>
                 <div className='emptyBox'>
                 </div>
@@ -39,14 +41,14 @@ const Header = () => {
                     <nav className='navContainer2' onMouseLeave={() => leaveNavBar()}>
                         {/* 회사소개 */}
                         {
-                            openSubMenu == 1 ? 
+                            openSubMenu == 1 ?
                                 <ul>
                                     <Link to="#"><li>우아한 문화</li></Link>
                                     <Link to="#"><li>히스토리</li></Link>
                                     <Link to="#"><li>지속가능한 경영</li></Link>
                                 </ul>
                                 : null
-                        } 
+                        }
                         {/* 서비스 */}
                         {
                             openSubMenu == 2 ?

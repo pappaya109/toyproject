@@ -1,0 +1,19 @@
+.mainCardWrapper {
+    text-align: center;
+    line-height: 3em;
+    height: 75vh;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardSlide {
+    margin: 2em 0em;
+}
+
+.cardSlide  p {
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    color: black;
+}

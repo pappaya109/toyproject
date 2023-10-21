@@ -1,6 +1,15 @@
 * {
   margin: 0;
 }
+h2, p {
+  text-align: center;
+}
+h2 {
+  line-height: 1.5em;
+  font-size: 2.22em;
+  letter-spacing: -0.1em;
+  word-spacing: 0.1em;
+}
 @font-face {
   font-family: 'BMHANNAPro';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff') format('woff');
@@ -9,7 +18,16 @@
   }
 
 /* Header */
-
+@keyframes showNav {
+  from {
+    transform: translateY(-100%);
+    /* width: 0%; */
+  }
+  to {
+    transform: translateY(0%);
+    /* width: 100%; */
+  }
+}
 header {
   z-index: 1111;
   width: 100%;
@@ -22,37 +40,32 @@ header {
   width: 7.8em;
   height: 2em;
 }
+
 .navContainer {
-  display: flex;
   height: 5em;
-  align-items: center;
-
-}
-
-.navContainer:first-child {
+  display: flex;
   justify-content: space-around;
-} 
-
-.navContainer:nth-child(2) {
-  justify-content: center;
-
-}
-
-header > nav:nth-child(2) {
-  justify-content: flex-end;
+  align-items: center;
 }
 
 .navContainer > ul {
-  justify-content: space-between;
-  display: flex;
-  padding: 0;
-}
-.navContainer:first-child > ul {
   width: 15%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.navContainer:nth-child(2) > ul {
+header > .navContainer2 {
+  height: min-content;
+}
+
+.navContainer2 > ul {
   width: 17%;
+  height: 5em;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .emptyBox {
@@ -124,4 +137,3 @@ a:active {
   height: 100vh;
 }
 
-/* Main Page */

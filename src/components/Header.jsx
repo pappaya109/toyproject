@@ -2,9 +2,11 @@ import React, { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-    const [openBar, setOpenBar] = useState();
+    const [openBar, setOpenBar] = useState(false);
     const [openSubMenu, setOpenSubsMenu] = useState();
-
+    const[scroll,setScroll] = useState()
+    useEffect(()=>{setScroll(window.scrollY)},[scroll])
+    console.log(scroll)
     const hoverNavBar = (e) => {
         setOpenSubsMenu(e.target.value)
         setOpenBar(true)
@@ -34,7 +36,7 @@ const Header = () => {
             </nav>
             {
                 openBar ?
-                    <nav className='navContainer' onMouseLeave={() => leaveNavBar()}>
+                    <nav className='navContainer2' onMouseLeave={() => leaveNavBar()}>
                         {/* 회사소개 */}
                         {
                             openSubMenu == 1 ? 

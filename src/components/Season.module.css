@@ -1,0 +1,14 @@
+.SeasonWrapper {
+    width: 100%;
+    height: 80vh;
+    background-image: url('https://woowahan-cdn.woowahan.com/static/image/main/pc/season_1_bg.jpg?af10f3b0');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.textBox {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
